@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +44,20 @@ namespace VowelChecker
 
             // Return the total Vowels Counted
             return VowelCount;
+        }
+
+        private void IncludeYCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.IncludeYCheckBox.Checked)
+            {
+                // Update the Vowels Array to include 'Y'
+                Vowels = new char[] { 'a', 'e', 'i', 'o', 'u', 'y' };
+            }
+            else
+            {
+                // Update the Vowels Array to Remove 'Y'
+                Vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
+            }
         }
     }
 }
