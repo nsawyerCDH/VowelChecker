@@ -61,6 +61,7 @@ namespace VowelChecker
             this.CountVowelsButton.TabIndex = 2;
             this.CountVowelsButton.Text = "Count Vowels!";
             this.CountVowelsButton.UseVisualStyleBackColor = true;
+            this.CountVowelsButton.Click += new System.EventHandler(this.CountVowelsButton_Click);
             // 
             // Form1
             // 
