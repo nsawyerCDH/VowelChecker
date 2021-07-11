@@ -32,6 +32,7 @@ namespace VowelChecker
             this.UserStringTextbox = new System.Windows.Forms.TextBox();
             this.EnterStringLabel = new System.Windows.Forms.Label();
             this.CountVowelsButton = new System.Windows.Forms.Button();
+            this.IncludeYCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // UserStringTextbox
@@ -63,11 +64,23 @@ namespace VowelChecker
             this.CountVowelsButton.UseVisualStyleBackColor = true;
             this.CountVowelsButton.Click += new System.EventHandler(this.CountVowelsButton_Click);
             // 
+            // IncludeYCheckBox
+            // 
+            this.IncludeYCheckBox.AutoSize = true;
+            this.IncludeYCheckBox.Location = new System.Drawing.Point(15, 78);
+            this.IncludeYCheckBox.Name = "IncludeYCheckBox";
+            this.IncludeYCheckBox.Size = new System.Drawing.Size(75, 17);
+            this.IncludeYCheckBox.TabIndex = 3;
+            this.IncludeYCheckBox.Text = "Include \'Y\'";
+            this.IncludeYCheckBox.UseVisualStyleBackColor = true;
+            this.IncludeYCheckBox.CheckedChanged += new System.EventHandler(this.IncludeYCheckBox_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 107);
+            this.Controls.Add(this.IncludeYCheckBox);
             this.Controls.Add(this.CountVowelsButton);
             this.Controls.Add(this.EnterStringLabel);
             this.Controls.Add(this.UserStringTextbox);
@@ -84,6 +97,7 @@ namespace VowelChecker
         private System.Windows.Forms.TextBox UserStringTextbox;
         private System.Windows.Forms.Label EnterStringLabel;
         private System.Windows.Forms.Button CountVowelsButton;
+        private System.Windows.Forms.CheckBox IncludeYCheckBox;
     }
 }
 
