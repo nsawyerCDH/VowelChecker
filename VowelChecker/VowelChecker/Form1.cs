@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,14 +31,18 @@ namespace VowelChecker
         {
             int VowelCount = 0;
 
+            // Loop over each character in the UserEntry string
             foreach(char c in UserEntry)
             {
-               if (Vowels.Contains(c))
+                // Check if the Vowels Array contains the current char "c"
+               if (Vowels.Contains(char.ToLower(c)))
                 {
+                    // If vowel found, increment the VowelCount
                     VowelCount++;
                 }
             }
 
+            // Return the total Vowels Counted
             return VowelCount;
         }
     }
